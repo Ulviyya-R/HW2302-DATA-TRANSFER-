@@ -1,0 +1,24 @@
+﻿@using WebApplication3.ViewModels;
+@model BazaVM
+
+
+
+
+<div id="Products" class="container" style="padding-top:70px; padding-bottom:70px">
+	<div class="row gx-5 gy-5">
+		@foreach (var item in Model.Products)
+		{
+			<div class="col-3">
+				<div class="card" style="width:100%">
+					<img src="@item.Image" class="card-img-top">
+					<div class="card-body">
+
+						<h5 class="card-title">@item.Name</h5>
+						<p class="card-text"> @item.Description</p>
+						<p class="" style="color:red;">@item.Price </p>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>
