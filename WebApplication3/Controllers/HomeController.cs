@@ -15,5 +15,9 @@ namespace WebApplication3.Controllers
 
 			return View(model);
 		}
-    }
+		public ActionResult Detail()
+		{
+			return View();
+		}
+	}
 }
